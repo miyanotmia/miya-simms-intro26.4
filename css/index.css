@@ -1,0 +1,90 @@
+/*Notes:
+11/5- working on padding and margin using dev console on chrome, may not be able to achieve this -- planning alternative layout*/
+body {
+ background: #45ed64;
+background: radial-gradient(circle,rgba(69, 237, 100, 1) 0%, rgba(25, 77, 209, 1) 55%, rgba(23, 20, 20, 1) 82%);
+margin: 5%;
+}
+#navbar{
+    text-decoration: none;
+}
+
+#navbar{
+    display: flex;
+    list-style-type: none;
+    
+    justify-content: space-evenly;
+    
+  
+}
+
+#navbar li{
+padding-bottom: 5px;
+margin: 5px;
+border: #d66da3;
+    border-width: 5px;
+    border-radius: 50px;
+    border-style: groove;
+width: 120px;
+height: 40px;
+text-align: center;
+font-size: 12px;
+font-family: "Redaction 50", serif;
+}
+
+#navbar a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#name{
+    font-family: "Redaction 50", serif;
+    text-align: center;
+    font-size: 75px;
+    
+    
+}
+#about{
+display: flex;
+border-style: double;
+margin-top:10% ;
+background-color: #d66da3;
+}
+
+
+
+#about h4{
+border-style: dashed;
+border-color: antiquewhite;
+margin: 60px;
+margin-bottom: 0px;
+width: 150px;
+height: 150px;
+
+
+}
+#about h2{
+border-style: dotted;
+border-color: #d66da3;
+border-width: 5px;
+width: 40%;
+height: 50%;
+font-size: 75px;
+text-align: center;
+padding-top: 2%;
+padding-bottom: 2%;
+padding-left: 2%;
+margin: 5%;
+font-family: "Redaction 50", serif;
+background-color: aqua;
+}
+#aboutme{
+    border-style: dotted;
+    width: 50%;
+    height:50%;
+   margin: 100px;
+    padding: 20px;
+    background-color: aqua;
+    
+}
