@@ -194,7 +194,7 @@ font-family: "Redaction 70", serif;
 
 #connect {
 display: flex;
-flex-direction: row-reverse;
+flex-direction: row;
 border-style: double;
 margin-top:10% ;
 background-color: rgba(214, 109, 163, 0.521);
@@ -203,7 +203,7 @@ height: 50%;
 }
 
 #connect h2{
-    border-style: dotted;
+border-style: dotted;
 border-color: #45ed64be;
 border-width: 5px;
 width: 40%;
@@ -219,4 +219,11 @@ font-family: "Redaction 70", serif;
 #connect ul{
     list-style-type: none;
     margin: 10px;
+    display: flex;
+    
+}
+#connect img {
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
 }
