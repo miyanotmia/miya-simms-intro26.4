@@ -227,3 +227,21 @@ font-family: "Redaction 70", serif;
     width: 100px;
     height: 100px;
 }
+#skill ul{
+    display: flexbox;
+    flex-direction: column;
+    
+}
+#skills li{
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style-type:none;
+    
+}
+
+footer{
+    
+    color: white;
+}
