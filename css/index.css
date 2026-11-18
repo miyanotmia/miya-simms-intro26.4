@@ -169,28 +169,7 @@ margin-left: 25%;
 font-family: "Redaction 70", serif;
 }
 
-#skills {
-display: flex;
-flex-direction: row;
-border-style: double;
-margin-top:10% ;
-background-color: rgba(214, 109, 163, 0.521);
-width: 100%;
-height: 50%;
 
-}
-#skills h2{
-border-style: dotted;
-border-color: #d66da3;
-border-width: 5px;
-width: 25%;
-height: 50%;
-font-size: 75px;
-text-align: center;
-padding: 10px;
-margin: 5%;
-font-family: "Redaction 70", serif;
-}
 
 #connect {
 display: flex;
@@ -227,17 +206,49 @@ font-family: "Redaction 70", serif;
     width: 100px;
     height: 100px;
 }
-#skill ul{
-    display: flexbox;
-    flex-direction: column;
-    
+
+#skills {
+
+display: flex;
+flex-direction: row;
+border-style: double;
+margin-top:10% ;
+background-color: rgba(214, 109, 163, 0.521);
+width: 100%;
+height: 50%;
+
+
+}
+#skills h2{
+border-style: dotted;
+border-color: #d66da3;
+border-width: 5px;
+width: 25%;
+height: 50%;
+font-size: 75px;
+text-align: center;
+padding: 10px;
+margin: 5%;
+font-family: "Redaction 70", serif;
+}
+
+#skills ul{
+display: flex;
+flex-wrap: wrap;
+padding-bottom:5px;
+width: 500px;
+height: 200px;   
+text-align: center;
 }
 #skills li{
-    
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
     list-style-type:none;
+    border-style: groove;
+    border-color: #45ed64;
+    border-radius: 25px;;
+    width: 100px;
+    height: 37px;
     
 }
 
