@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 const footer = document.createElement("footer");
 document.body.appendChild(footer);
 const today = new Date();
@@ -16,3 +18,27 @@ for (let i =0; i <skills.length; i++){
     skill.textContent = skills[i];
     skillsList.appendChild(skill);
 }
+
+const messageForm = document.querySelector("#message-form");messageForm.addEventListener('submit',(event)=> {
+event.preventDefault();
+let userName= event.target.userName.value;
+let userEmail = event.target.userEmail.value;
+let userMessage = event.target.userMessage.value;
+console.log(event)
+
+const messageSection = document.getElementById('messages');
+const messageList = messageSection.getElementsByTagName('ul');
+const newMessage = document.createElement('li');
+newMessage.innerHTML =`<a href='mailto:${userEmail}'> ${userName} </a> <span> ${userMessage}</span>`;
+ const removeButton = document.createElement('button');
+   removeButton.innerHTML = `remove`;
+    removeButton.type = "button";
+    removeButton.addEventListener("click" ,function(event){
+        const entry = this.parentNode;
+        entry.remove();
+    });
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+    
+   event.target.reset();
+})
