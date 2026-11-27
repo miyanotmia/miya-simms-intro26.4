@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 const footer = document.createElement("footer");
 document.body.appendChild(footer);
 const today = new Date();
@@ -19,15 +17,18 @@ for (let i =0; i <skills.length; i++){
     skillsList.appendChild(skill);
 }
 
-const messageForm = document.querySelector("#message-form");messageForm.addEventListener('submit',(event)=> {
+const messageForm = document.querySelector("#message-form");
+console.log(messageForm)
+messageForm.addEventListener('submit',(event)=> {
 event.preventDefault();
 let userName= event.target.userName.value;
 let userEmail = event.target.userEmail.value;
 let userMessage = event.target.userMessage.value;
-console.log(event)
+console.log(userName,userMessage,userEmail);
 
 const messageSection = document.getElementById('messages');
-const messageList = messageSection.getElementsByTagName('ul');
+const messageList = messageSection.querySelector('ul');
+console.log(messageList);
 const newMessage = document.createElement('li');
 newMessage.innerHTML =`<a href='mailto:${userEmail}'> ${userName} </a> <span> ${userMessage}</span>`;
  const removeButton = document.createElement('button');

@@ -12,13 +12,13 @@ color: whitesmoke;
     text-decoration: none;
     background-color: #d66da3;
     border-radius: 100px;
+     display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
 }
 
 #navbar{
-    display: flex;
-    list-style-type: none;
-    
-    justify-content: space-evenly;
+   
     
   
 }
@@ -216,8 +216,6 @@ margin-top:10% ;
 background-color: rgba(214, 109, 163, 0.521);
 width: 100%;
 height: 50%;
-
-
 }
 #skills h2{
 border-style: dotted;
@@ -251,7 +249,70 @@ text-align: center;
     height: 37px;
     
 }
+.message-container{
+display: grid;
+grid-template-columns: auto auto;
+margin-top:5%;
+background-color: antiquewhite;
+justify-content: space-evenly;
+}
 
+#message-form{
+    background-color: #d66da3a8;
+    width: 500px;
+    padding: 15px;
+    padding-left: 20px;
+    text-align: center;
+    border-style: dashed;
+
+}
+#message-form h2{
+    font-family: 'Redaction 50',serif;
+}
+#message-form input{
+    width: 200px;
+    height: 20px;
+    border-radius: 50px;
+    padding: 10px;
+    border-color: #45ed64;
+    border-style: groove;
+    border-width: 5px;
+}
+#message-form textarea{
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 20px;
+    border-style: groove;
+    border-color: #45ed64;
+}
+#messages{
+background-color: #45ed64;
+ width: 500px;
+text-decoration: none;
+ height: 300px;
+ padding: 15px;
+word-wrap: break-word;
+ 
+}
+#messages h2{
+    font-family: 'Redaction 50',serif;
+    font-size: 30px;
+    text-align: center;
+}
+#messages li{
+    background-color: aqua;
+    width: 100px;
+    height: 70px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+   margin: 10px;
+    list-style: none;
+
+}
 footer{
     
     color: white;
