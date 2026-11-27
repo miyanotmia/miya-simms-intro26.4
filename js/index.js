@@ -32,7 +32,7 @@ console.log(messageList);
 const newMessage = document.createElement('li');
 newMessage.innerHTML =`<a href='mailto:${userEmail}'> ${userName} </a> <span> ${userMessage}</span>`;
  const removeButton = document.createElement('button');
-   removeButton.innerHTML = `remove`;
+   removeButton.innerHTML = `Remove`;
     removeButton.type = "button";
     removeButton.addEventListener("click" ,function(event){
         const entry = this.parentNode;

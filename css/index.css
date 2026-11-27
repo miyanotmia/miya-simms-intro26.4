@@ -17,11 +17,6 @@ color: whitesmoke;
     justify-content: space-evenly;
 }
 
-#navbar{
-   
-    
-  
-}
 
 #navbar li{
 padding-bottom: 5px;
@@ -253,12 +248,12 @@ text-align: center;
 display: grid;
 grid-template-columns: auto auto;
 margin-top:5%;
-background-color: antiquewhite;
+background-color: radial-gradient(circle,rgba(69, 237, 100, 1) 0%, rgb(25, 77, 209)55%, rgba(23, 20, 20, 1) 82%);
 justify-content: space-evenly;
 }
 
 #message-form{
-    background-color: #d66da3a8;
+    
     width: 500px;
     padding: 15px;
     padding-left: 20px;
@@ -274,13 +269,13 @@ justify-content: space-evenly;
     height: 20px;
     border-radius: 50px;
     padding: 10px;
-    border-color: #45ed64;
     border-style: groove;
-    border-width: 5px;
+    border-width: 2px;
+    border-color: #45ed64;
 }
 #message-form textarea{
     width: 300px;
-    height: 100px;
+    height: 75px;
     border-radius: 50px;
     padding: 30px;
     margin: 15px;
@@ -289,12 +284,13 @@ justify-content: space-evenly;
     border-color: #45ed64;
 }
 #messages{
-background-color: #45ed64;
  width: 500px;
 text-decoration: none;
- height: 300px;
+ height: 350px;
  padding: 15px;
 word-wrap: break-word;
+    border-style: dashed;
+
  
 }
 #messages h2{
@@ -303,7 +299,7 @@ word-wrap: break-word;
     text-align: center;
 }
 #messages li{
-    background-color: aqua;
+    background-color:#d66da3ab;
     width: 100px;
     height: 70px;
     border-radius: 25px;
@@ -312,6 +308,20 @@ word-wrap: break-word;
    margin: 10px;
     list-style: none;
 
+}
+#message-form button{
+    width: 100px;
+    font-family: 'lekton', monospace;
+   color: whitesmoke;
+   background-color: #d33084;
+   font-weight: 700;
+}
+#messages button{
+    margin: 3%;
+    width: 100px;
+     font-family: 'lekton', monospace;
+   color: whitesmoke;
+   background-color: #d33084;
 }
 footer{
     
