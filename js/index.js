@@ -17,13 +17,13 @@ for (let i =0; i <skills.length; i++){
     skillsList.appendChild(skill);
 }
 
-const messageForm = document.querySelector("#message-form");
+const messageForm = document.querySelector('form[name= "leave_message"]');
 console.log(messageForm)
 messageForm.addEventListener('submit',(event)=> {
 event.preventDefault();
-let userName= event.target.userName.value;
-let userEmail = event.target.userEmail.value;
-let userMessage = event.target.userMessage.value;
+let userName= event.target.usersName.value;
+let userEmail = event.target.usersEmail.value;
+let userMessage = event.target.usersMessage.value;
 console.log(userName,userMessage,userEmail);
 
 const messageSection = document.getElementById('messages');
